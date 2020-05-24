@@ -1,30 +1,35 @@
-# aniversariantes-feitosa
+# Aniversariantes Feitosa
 
 > A Vue.js project
 
-## Build Setup
+## Setup
 
-``` bash
-# install dependencies
-npm install
+- Install dependencies
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
+```sh
+yarn install
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+- Serve with hot reload at localhost:8080
+
+```sh
+yarn run start
+```
+
+- Build for production with minification
+
+```sh
+yarn run build
+```
+
+- Build for production with minification
+
+```sh
+yarn run build
+```
+
+- Deploy
+
+```sh
+yarn run deploy
+```

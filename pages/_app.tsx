@@ -5,16 +5,13 @@ import { ThemeProvider } from 'styled-components';
 import { darkTheme, GlobalStyles, lightTheme } from '../themeConfig';
 
 function MyApp({ Component, pageProps }: AppProps) {
-  const [theme, setTheme] = useState("light");
-
-  const toggleTheme = () => {
-    theme == "light" ? setTheme("dark") : setTheme("light");
-  };
+  const [isDarkMode, setIsDarkMode] = useState(() => false);
+  pageProps.setIsDarkMode = setIsDarkMode
+  pageProps.isDarkMode = isDarkMode
 
   return (
-    <ThemeProvider theme={theme == "light" ? lightTheme : darkTheme}>
+    <ThemeProvider theme={!isDarkMode ? lightTheme : darkTheme}>
       <GlobalStyles />
-      <button onClick={toggleTheme}>Switch Theme</button>
       <Component {...pageProps} />
     </ThemeProvider>
   );

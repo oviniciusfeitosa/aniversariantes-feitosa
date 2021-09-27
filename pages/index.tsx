@@ -33,7 +33,8 @@ const Home: NextPage<ChildProps> = ({isDarkMode, setIsDarkMode}) => {
         <p className={styles.description}>
           Próximos aniversários
         </p>
-        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showPrint=0&showTz=0&showCalendars=0&showDate=0&src=cWFtdHJjZm5ncDdoMTllNHJtcWFjMWUzY3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA" style={{border: 0, height: 500}} scrolling="yes"></iframe>
+        
+        <iframe src="https://calendar.google.com/calendar/embed?height=400&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTz=0&showCalendars=0&showPrint=0&showDate=0&showTitle=0&src=cWFtdHJjZm5ncDdoMTllNHJtcWFjMWUzY3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA" style={{border: 0, height: 500}} scrolling="yes"></iframe>
           
       </main>
 

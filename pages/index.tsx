@@ -1,7 +1,9 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Head from 'next/head';
+// import Image from 'next/image';
+import { ThemeProvider } from 'styled-components';
+
+import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
   return (
@@ -14,42 +16,19 @@ const Home: NextPage = () => {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Aniversariantes Feitosa
         </h1>
 
         <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
+          Visualize as datas de aniversário da família.
         </p>
+        <a href="https://nextjs.org/docs" className={styles.card}>
+          <iframe src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23ffffff&ctz=America%2FSao_Paulo&showTitle=0&showNav=0&showPrint=0&showTabs=1&showCalendars=0&showTz=0&mode=AGENDA&src=cWFtdHJjZm5ncDdoMTllNHJtcWFjMWUzY3NAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%238E24AA" style={{border: 0}} scrolling="no"></iframe>
+        </a>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h2>Deploy &rarr;</h2>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+          
         </div>
       </main>
 
@@ -59,9 +38,9 @@ const Home: NextPage = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by {' '}
           <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+            @oviniciusfeitosa
           </span>
         </a>
       </footer>
